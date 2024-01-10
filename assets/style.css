@@ -1,0 +1,300 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto Bold;
+  src: url(./Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto Light;
+  src: url(./Roboto-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  --font-size-regularFontSize: 1.8rem;
+  --color-linkColor: #ff3571;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-image: url(./img/ilustracion1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+}
+
+nav {
+  padding-left: 5vw;
+  padding-top: 5vh;
+  max-width: 50vw;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+img {
+  width: 100%;
+}
+
+.logo img {
+  width: 40px;
+
+  position: fixed;
+}
+
+.logoFont {
+  font-family: Roboto Bold;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #0b0c17;
+}
+
+nav div {
+  margin-left: 50px;
+}
+
+h1 {
+  font-family: Roboto Bold;
+  font-size: 5.6rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-family: Roboto Bold;
+  font-size: 3.8rem;
+  line-height: 4.6rem;
+}
+
+h3 {
+  font-family: Roboto Bold;
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-family: Roboto Light;
+  font-size: 1.8rem;
+  padding-bottom: 1.8rem;
+  color: #0b0c17;
+}
+
+a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav div p {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+header section a {
+  color: #ff3571;
+  margin-top: 5rem;
+}
+
+main a {
+  color: #ff3571;
+}
+
+header section {
+  width: 40%;
+  margin-top: 40vh;
+  margin-left: 10vw;
+  margin-bottom: 9vh;
+}
+
+.gallery {
+  width: 100%;
+  padding-bottom: 20vh;
+}
+
+/* ! style 1   Every Idea */
+
+.content-style-1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-bottom: 10vh;
+}
+
+.tagline-s1 {
+  width: 30rem;
+  height: 3rem;
+}
+
+.text-s1 {
+  width: 45%;
+}
+
+.content-style-1 img {
+  width: 40px;
+}
+
+.content-style-1 p {
+  line-height: 3.6rem;
+}
+
+/* ! style 2    After several weeks ... */
+
+.content-style-2 {
+  margin-left: 20vw;
+  max-width: 64.5rem;
+}
+
+/* ! Content Style 3 */
+
+.s3-grid-2columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15%;
+  padding: 15% 15% 0 15%;
+}
+
+.s3-grid-2columns img {
+  width: 32px;
+  position: relative;
+  left: -45px;
+  top: 30px;
+}
+
+.s3-grid-2columns p {
+  font-family: Roboto Light;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  margin-bottom: 15%;
+}
+
+.box1-s3 {
+  grid-column: 1 / 2;
+
+  display: grid;
+  grid-column: 1fr;
+}
+
+.box2-s3 {
+  grid-column: 2 / 3;
+
+  display: grid;
+  grid-column: 1fr;
+}
+
+/* ! Style 4 */
+
+.style-4 {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 60%;
+  margin: auto;
+
+  text-align: center;
+
+  padding: 5vh 0 5vh 0;
+}
+
+.style-4 h2 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  font-family: Roboto Bold;
+  padding-bottom: 2.4rem;
+}
+
+/* ! style 5   Illustration and Text */
+
+.style-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5%;
+  gap: 5%;
+}
+
+.style-5 div {
+  padding: 2%;
+}
+
+.style-5 p {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+}
+
+.grayNumber {
+  font-size: 5.2rem;
+  font-family: Roboto Bold;
+  color: #dddddd;
+
+  padding-bottom: 2.4rem;
+}
+
+.emoji {
+  width: 100px;
+  padding-bottom: 2.4rem;
+}
+
+.grayNumber {
+  display: block;
+}
+
+/* ! subscribe form */
+
+input {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  color: #757575;
+  padding: 1.6rem 4rem 1.6rem 4rem;
+  border-radius: 5px;
+  border: 1px solid #f5f5f5;
+
+  margin-bottom: 3rem;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.button-submit {
+  color: white;
+  width: 25rem;
+  height: 6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.9rem;
+  background-color: #ff3571;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.button-submit:hover {
+  background-color: blue;
+}
+
+/* ! footer */
+
+footer {
+  padding-left: 10vw;
+}
+
+footer img {
+  width: 25px;
+}
